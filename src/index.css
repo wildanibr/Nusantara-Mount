@@ -1,0 +1,330 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+}
+
+nav{
+  background: #1c6167;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right:5%;
+}
+nav .link:hover{
+  color: #e1d713d1;
+}
+
+ h3{
+    display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 5px;
+ }
+
+ footer {
+  padding: 25px;
+  }
+  
+  footer p {
+  font-size: 15px;
+  text-align: center;
+  color: #3d3d3d;
+  }
+
+.link {
+    display: flex;
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: medium;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-image: url("assets/gunung.jpg");
+  }
+  .heroinner {
+    margin: 0 auto;
+    max-width: 800px
+  }
+  .hero-title {
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 1px 1px #141414
+  }
+  .hero-desc {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 0;
+    padding: 8px 8px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:#1c6167;
+    border: 1px solid var(--button);
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #e1d713d1;
+  }
+  
+  .btn:active {
+    background-color: #23806d;
+  }
+  .search-bar {
+    border: 2px solid #1C6758;
+    border-radius: 8px;
+    text-align: center; 
+    margin: 20px auto; 
+    width: 50%;
+  }
+  
+  .search-bar input {
+    width: 96%; 
+    padding: 10px;
+    border-style: none;
+  }
+  
+  .judul-main{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .main {
+    margin: auto;
+    text-align: left;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
+    padding: 20px;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+  }
+
+  .gunung-item {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 30px;
+  }
+  
+  
+  .gunung-poster {
+    width: 100%;
+    max-height: 150px;
+    object-fit: fill;
+  }
+  
+  .gunung-item .gunung-item__content {
+    padding: 16px;
+  }
+  
+  .gunung-item .gunung-item__content h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .gunung-item .gunung-item__content h3 a {
+    color: saddlebrown;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .gunung-item .gunung-item__content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .openai-submit{
+   padding-bottom: 430px;
+  }
+
+  .py-4 {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .px-8{
+  padding-right: 0rem;
+  padding-left: 0rem;
+  }
+
+  .submit-openai{
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: #1c6167;
+    border: 1px solid var(--button);
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+  }
+
+.saran {
+  list-style: none;
+  padding: 0;
+}
+
+.list-saran {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'poppins';
+}
+
+.button-submit {
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: #1c6167;
+    border: 1px solid var(--button);
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.button-saran:hover {
+  background-color: #ff412a;
+}
+
+.input-saran {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.title-saran {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.button-delete{
+  padding: 6px 10px;
+  background-color: #e70e0ed1;
+  border: 1px solid var(--button);
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  display: flex;
+  justify-content:flex-end;
+  float: right;
+}
+
+.button-edit{
+  background-color: #e1d713d1;
+  padding: 6px 10px;
+  border: 1px solid var(--button);
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  justify-content: end;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  float: right;
+}
+/* halaman detail */
+.detailGunung {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.gunung__name{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.detailGunung .gunung__image {
+  width: 100%;
+}
+
+.detailGunung .gunung__info h4 {
+  padding-top:10px ;
+  padding-bottom: 10px;
+  color: #393646;
+}
+
+.gunung__info {
+  margin: 20px 0;
+  /* display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 80px;
+    grid-template-columns: repeat(2, 1fr); */
+}
+
+.gunung__info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.gunung__info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin: 5px 0;
+}
+
+.gunung__info p {
+  font-size: 16px;
+  color: #565654;
+  margin: 5px 0;
+}
+
+.gunung__info a {
+  text-decoration: none;
+  color: #0074D9;
+  transition: color 0.3s;
+}
+
+.gunung__info a:hover {
+  color: #0056b3;
+}
