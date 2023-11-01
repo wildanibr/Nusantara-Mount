@@ -3,5 +3,5 @@
 Wildan Ibra Alamsyah<br/>
 Alterra React C
 
-Deployment https://nusantara-mount.vercel.app/ <br/>
+Deployment <br/>
 Desain Figma 
