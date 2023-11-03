@@ -7,7 +7,7 @@ import { Input } from "../component/input";
 import Button from "../component/button";
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: import.meta.env.VITE_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 
