@@ -8,6 +8,7 @@ return (
 
     <div>
         <Link className="link" to="/">Home</Link>
+        <Link className="link" to="/login">Login</Link>
         <Link className="link" to="/main">Content</Link>
         <Link className="link" to="/bookmark">Bookmark</Link>
         <Link className="link" to="/openai">Ask Questions</Link>
