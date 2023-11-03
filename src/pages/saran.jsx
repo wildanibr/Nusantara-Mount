@@ -55,6 +55,12 @@ class KritikSaran extends Component {
       });
   }
 
+  handleDeleteWithAlert(id, text) {
+    if (window.confirm(`Apakah Anda yakin ingin menghapus kritik/saran ini: "${text}"?`)) {
+      this.handleDelete(id);
+    }
+  }
+
   handleDelete = id => {
     axios.delete(`https://65256cd867cfb1e59ce742c4.mockapi.io/api/v1/saran/${id}`) 
       .then(response => {
@@ -77,7 +83,7 @@ class KritikSaran extends Component {
               {item.text}
               <Button 
               className="button-delete" 
-              onClick={() => this.handleDelete(item.id)}
+              onClick={() => this.handleDeleteWithAlert(item.id, item.text)}
               label="delete"/>
                <Button 
               className="button-edit" 

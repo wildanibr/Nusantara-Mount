@@ -65,12 +65,12 @@ nav .link:hover{
     max-width: 800px
   }
   .hero-title {
-    color: #fff;
+    color: #ffffff;
     font-size: 60px;
     text-shadow: 1px 1px #141414
   }
   .hero-desc {
-    color: #fff;
+    color: #000000;
     font-size: 17px;
     font-weight: 0;
     padding: 8px 8px;
@@ -255,7 +255,7 @@ nav .link:hover{
 }
 
 .button-edit{
-  background-color: #e1d713d1;
+  background-color: #1c6167;
   padding: 6px 10px;
   border: 1px solid var(--button);
   border-radius: 5px;

@@ -7,7 +7,7 @@ import { Input } from "../component/input";
 import Button from "../component/button";
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: "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",
   dangerouslyAllowBrowser: true,
 });
 
@@ -23,7 +23,7 @@ export default function Index() {
   async function fetchData() {
     try {
       const response = await openai.chat.completions.create({
-        messages: [{ role: "system", content: "You are assistant as a professional mountain claimber." }],
+        messages: [{ role: "system", content: "You are assistant as a professional mountain climber" }],
         model: "gpt-3.5-turbo",
       });
       setResults(response.choices);
