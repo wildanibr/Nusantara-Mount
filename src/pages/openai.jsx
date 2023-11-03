@@ -23,7 +23,7 @@ export default function Index() {
   async function fetchData() {
     try {
       const response = await openai.chat.completions.create({
-        messages: [{ role: "system", content: "You are assistant as a professional mountain climber" }],
+        messages: [{ role: "system", content: "Kamu adalah asisten untuk pendaki gunung" }],
         model: "gpt-3.5-turbo",
       });
       setResults(response.choices);
@@ -77,13 +77,13 @@ export default function Index() {
       </div>
       <form onSubmit={handleSubmit} className="flex items-center gap">
         <Input
-          placeholder="Ask questions"
+          placeholder="Isi pertanyaan"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         />
         <Button
         className="submit-openai"
-          label={isLoading ? "Loading" : "Submit"}
+          label={isLoading ? "Loading" : "Kirim"}
           type="submit"
           disabled={isLoading}
           aria-disabled={isLoading}
