@@ -3,5 +3,5 @@
 Wildan Ibra Alamsyah<br/>
 Alterra React C
 
-Deployment [Click Here]() <br/>
-Desain Figma [Click Here]()
+Deployment <br/>
+Desain Figma 
