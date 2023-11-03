@@ -242,7 +242,7 @@ nav .link:hover{
 
 .button-delete{
   padding: 6px 10px;
-  background-color: #e70e0ed1;
+  background-color: #e70e0eaa;
   border: 1px solid var(--button);
   border-radius: 5px;
   margin-left: 10px;
@@ -256,7 +256,7 @@ nav .link:hover{
 }
 
 .button-edit{
-  background-color: #1c6167;
+  background-color: #1c6167ef;
   padding: 6px 10px;
   border: 1px solid var(--button);
   border-radius: 5px;

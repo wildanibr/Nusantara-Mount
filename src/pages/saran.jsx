@@ -84,11 +84,11 @@ class KritikSaran extends Component {
               <Button 
               className="button-delete" 
               onClick={() => this.handleDeleteWithAlert(item.id, item.text)}
-              label="delete"/>
+              label="Hapus"/>
                <Button 
               className="button-edit" 
               onClick={() => this.handleUpdate(item.id, prompt('Edit Kritik/Saran:', item.text))}
-              label="edit"
+              label="Edit"
               />
             </li>
           ))}
